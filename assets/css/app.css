@@ -1,0 +1,135 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font: 16px/1 sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure,
+ol,
+ul {
+  margin: 0;
+  padding: 0; }
+
+main,
+li {
+  display: block; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit; }
+
+strong {
+  font-weight: bold; }
+
+a,
+button {
+  color: inherit;
+  transition: .3s; }
+
+a {
+  text-decoration: none; }
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer; }
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+:focus {
+  outline: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0; }
+
+body {
+  overflow: hidden; }
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+
+* {
+  user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none; }
+
+#loading {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  background: #333333;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 1s linear; }
+  #loading.active {
+    opacity: 1;
+    visibility: visible; }
+  #loading img {
+    position: absolute;
+    left: calc(50% - 64px);
+    top: calc(50% - 64px); }
+
+#end {
+  font-family: 'Anton', sans-serif;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(51, 51, 51, 0.4);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 1s linear;
+  color: #fff;
+  font-size: 5rem; }
+  #end.active {
+    opacity: 1;
+    visibility: visible; }
+  #end span {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    top: calc(20%); }
+  #end a {
+    display: none;
+    position: absolute;
+    width: 50px;
+    left: calc(50% - 25px);
+    bottom: calc(10%);
+    font-size: 2rem;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    opacity: 0.7; }
+  #end.active a {
+    display: block; }
